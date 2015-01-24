@@ -71,6 +71,8 @@ public class Main extends Plugin implements Listener {
                     public void done(ServerPing ping, Throwable throwable) {
                         if (throwable == null) {
                             mainServerPing = ping;
+                        } else {
+                            mainServerPing = null;
                         }
                     }
                 });
